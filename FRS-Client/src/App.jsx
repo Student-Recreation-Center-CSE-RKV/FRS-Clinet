@@ -10,7 +10,8 @@ import ManageFaculty from "./pages/admin/ManageFaculty";
 import StudentVisualisation from "./pages/admin/StudentVisualisation";
 import LoginForm from "./pages/Login";
 import StudentDashboard from "./pages/StudentDashboard";
-
+import Modifyattendance from "./pages/admin/Modifyattendance";
+import Modifyattendancedata from "./pages/admin/Modifyattendancedata";
 import E1Classes from "./pages/admin/E1Classes";
 import E2Classes from "./pages/admin/E2Classes";
 import E3Classes from "./pages/admin/E3Classes";
@@ -47,6 +48,9 @@ function App() {
             <Route path="todayclasses/e4" element={<E4Classes />} />
             <Route path="managefaculty" element={<ManageFaculty />} />
             <Route path="studentvisualisation" element={<StudentVisualisation />} />
+            <Route path="modifyattendance" element={<Modifyattendance/>}/>
+            <Route path="modifyattendance/:studentId" element={<Modifyattendancedata />} />
+
 
           </Route>
           <Route path="/faculty" element={<FacultyLayout />}>
